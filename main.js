@@ -57,6 +57,8 @@ function data(){
     console.log(`middlename : ${md}`);
     var em = document.getElementById("email").value;
     console.log(`email is : ${em}`);
+    var pw = document.getElementById("pw").value;
+    console.log(`password : ${pw}`);
 }
 
 /*var fn = document.createElement("label");
@@ -147,6 +149,12 @@ var b7 = br();
 var i4 = inp("input","type","text","id","email");
 var b8 = br();
 
+var l5 = lab("label","for","pw","password");
+var b9 = br();
+var i5 = inp("input","type","password","id","pw");
+var b10 = br();
+var b11 = br();
+
 var bu = button("button","type","button","onclick","data()","clickme");
 
 
@@ -156,4 +164,4 @@ var bu = button("button","type","button","onclick","data()","clickme");
 
 
 
-document.body.append(l1,b1,i1,b2,l2,b3,i2,b4,l3,b5,i3,b6,l4,b7,i4,b8,bu);
+document.body.append(l1,b1,i1,b2,l2,b3,i2,b4,l3,b5,i3,b6,l4,b7,i4,b8,l5,b9,i5,b10,b11,bu);
