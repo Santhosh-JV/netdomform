@@ -59,7 +59,7 @@ function data(){
     console.log(`email is : ${em}`);
 }
 
-var fn = document.createElement("label");
+/*var fn = document.createElement("label");
 fn.setAttribute("for","first");
 fn.innerHTML="FirstName ";
 var br1 = document.createElement("br");
@@ -99,7 +99,61 @@ var b8 = document.createElement("br");
 var bu = document.createElement("button");
 bu.setAttribute("type","button");
 bu.setAttribute("onclick","data()");
-bu.innerHTML = "click me";
+bu.innerHTML = "click me";*/
 
 
-document.body.append(fn,br1,ifn,br2,ln,b3,iln,b4,mn,b5,imn,b6,em,b7,iem,b8,bu);
+function lab(tn,an,av,co){
+    var ele = document.createElement(tn);
+    ele.setAttribute(an,av);
+    ele.innerHTML = co;
+    return ele;
+}
+function br(){
+    var b =  document.createElement("br");
+    return b;
+}
+function inp(tn,a1,av,a2,av2){
+    var ele = document.createElement(tn);
+    ele.setAttribute(a1,av);
+    ele.setAttribute(a2,av2);
+    return ele;
+}
+function button(tn,at1,atv1,at2,atv2,con){   
+var ele = document.createElement(tn);
+ele.setAttribute(at1,atv1);
+ele.setAttribute(at2,atv2);
+ele.innerHTML="clickme";
+return ele;
+}
+
+var l1 = lab("label","for","first","FirstName");
+var b1 = br();
+var i1 = inp("input","type","text","id","first");
+var b2 = br();
+
+var l2 = lab("label","for","last","LastName");
+var b3 = br();
+var i2 = inp("input","type","text","id","last");
+var b4 = br();
+
+var l3 = lab("label","for","mid","MiddleName");
+var b5 = br();
+var i3 = inp("input","type","text","id","mid");
+var b6 = br();
+
+
+var l4 = lab("label","for","email","Email-id");
+var b7 = br();
+var i4 = inp("input","type","text","id","email");
+var b8 = br();
+
+var bu = button("button","type","button","onclick","data()","clickme");
+
+
+
+
+
+
+
+
+document.body.append(l1,b1,i1,b2,l2,b3,i2,b4,l3,b5,i3,b6,l4,b7,i4,b8,bu);
